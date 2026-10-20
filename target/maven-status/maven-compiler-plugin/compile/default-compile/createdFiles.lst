@@ -1,6 +1,0 @@
-ugel04\modelo\InstitucionDTO.class
-ugel04\modelo\ActivoDTO.class
-ugel04\config\ConexionDB.class
-ugel04\dao\ActivoDAO.class
-ugel04\dao\IActivoDAO.class
-ugel04\controlador\ActivoControlador.class
