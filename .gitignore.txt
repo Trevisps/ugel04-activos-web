@@ -1,0 +1,23 @@
+# Compilación Maven
+target/
+*.war
+*.ear
+*.jar
+
+# NetBeans y configuración de IDEs
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Archivos de sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+# Logs y volcados
+*.log
