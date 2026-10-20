@@ -157,7 +157,7 @@ public class ActivoDAO implements IActivoDAO {
         return lista;
     }
 
-    // convierte una fila del ResultSet en un ActivoDTO
+    // convierte una fila del resultset en un activodto
     private ActivoDTO armarActivo(ResultSet rs) throws SQLException {
         ActivoDTO a = new ActivoDTO();
         a.setIdActivo(rs.getInt("id_activo"));

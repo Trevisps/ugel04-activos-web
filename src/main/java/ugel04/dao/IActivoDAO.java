@@ -15,7 +15,7 @@ public interface IActivoDAO {
 
     void actualizar(ActivoDTO activo) throws SQLException;
 
-    // baja logica: nunca se hace DELETE
+    // baja logica pq no hay delete
     void darDeBaja(int idActivo, String motivo) throws SQLException;
 
     List<InstitucionDTO> listarInstituciones() throws SQLException;

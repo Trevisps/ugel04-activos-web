@@ -17,7 +17,7 @@ public class ActivoDTO {
     private String observaciones;
     private Timestamp fechaRegistro;
 
-    // datos del colegio (vienen del LEFT JOIN)
+    // datos del colegio del left join
     private String nombreIe;
     private String distritoIe;
 

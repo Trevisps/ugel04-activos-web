@@ -1,4 +1,4 @@
-/* ===== General ===== */
+/*GENERAL*/
 body {
     margin: 0;
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -29,7 +29,7 @@ body {
     color: #64748b;
 }
 
-/* ===== Franja roja (banner MINEDU / Gob.pe) ===== */
+/*FRANJA ROJA Y BANNER MINEDU*/
 .barra-roja {
     background: linear-gradient(90deg, #a71919 0%, #c62828 100%);
     color: #ffffff;
@@ -66,7 +66,7 @@ body {
     opacity: 0.85;
 }
 
-/* ===== Sub-barra blanca ===== */
+/*SUB BARRA BLANCA*/
 .subbarra {
     background: #ffffff;
     padding: 16px 0;
@@ -105,7 +105,7 @@ body {
     color: #c62828;
 }
 
-/* ===== Tarjetas KPI ===== */
+/*TARJETAS KPI*/
 .kpis {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -126,7 +126,7 @@ body {
     transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
 }
 
-/* reflejo diagonal */
+/*reflejo diagonal*/
 .kpi::before {
     content: "";
     position: absolute;
@@ -212,7 +212,7 @@ body {
     color: #d97706;
 }
 
-/* ===== Búsqueda y filtros ===== */
+/*BUSQEUDA Y FLITRO*/
 .filtros {
     display: flex;
     align-items: center;
@@ -299,7 +299,7 @@ body {
     box-shadow: 0 8px 20px rgba(198, 40, 40, 0.45);
 }
 
-/* ===== Ficha de inventario ===== */
+/*FICHA DE INVENTARIO*/
 .ficha {
     background: #ffffff;
     border-radius: 16px;
@@ -381,7 +381,7 @@ body {
     font-style: italic;
 }
 
-/* equipo con icono de color */
+/*equipo con icono de color*/
 .equipo {
     display: flex;
     align-items: center;
@@ -411,7 +411,7 @@ body {
 .ico-pc        { background: #ccfbf1; color: #0f766e; }
 .ico-ap        { background: #cffafe; color: #0891b2; }
 
-/* estados */
+/*estados*/
 .estado {
     display: inline-flex;
     align-items: center;
@@ -430,7 +430,7 @@ body {
 .est-mantenimiento { background: #fef3c7; color: #b45309; }
 .est-baja          { background: #fee2e2; color: #b91c1c; }
 
-/* acciones */
+/*acciones*/
 .acciones {
     display: flex;
     align-items: center;
@@ -486,7 +486,7 @@ body {
     border-color: #fca5a5;
 }
 
-/* ===== Modales ===== */
+/*MODALES*/
 .cabecera-roja {
     background: linear-gradient(90deg, #a71919 0%, #c62828 100%);
     color: #ffffff;
@@ -507,7 +507,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* ===== Pie ===== */
+/*PIE*/
 .pie {
     text-align: center;
     color: #64748b;
@@ -515,7 +515,7 @@ body {
     padding: 10px 0 26px 0;
 }
 
-/* ===== Pantallas más pequeñas ===== */
+/*PANTALLAS MAS PEQUEÑAS*/
 @media (max-width: 1200px) {
     .kpis {
         grid-template-columns: repeat(2, 1fr);

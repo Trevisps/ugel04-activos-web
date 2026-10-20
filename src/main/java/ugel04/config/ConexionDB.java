@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-// Singleton: una sola instancia que entrega las conexiones a MySQL
+// que es singleton una sola instancia que entrega las conexiones a sql
 public class ConexionDB {
 
     private static ConexionDB instancia;

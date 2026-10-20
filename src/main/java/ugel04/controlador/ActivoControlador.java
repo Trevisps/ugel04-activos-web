@@ -26,7 +26,7 @@ public class ActivoControlador extends HttpServlet {
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
 
-        // los mensajes se guardan en la sesion antes de redirigir, aqui se pasan a la vista
+        // los mensajes se guardan en la sesion antes de redirigir aqui se pasan a la vista
         HttpSession sesion = request.getSession();
         request.setAttribute("mensajeOk", sesion.getAttribute("mensajeOk"));
         request.setAttribute("mensajeError", sesion.getAttribute("mensajeError"));
@@ -53,7 +53,7 @@ public class ActivoControlador extends HttpServlet {
             request.setAttribute("mensajeError", "Error al consultar la base de datos: " + e.getMessage());
         }
 
-        // contadores de las tarjetas KPI (siempre sobre el total, sin filtros)
+        // contadores de las tarjetas kpi OJO siempre sobre el total asi sin filtros
         int enAlmacen = 0;
         int asignados = 0;
         int mantenimientoBaja = 0;
@@ -142,13 +142,13 @@ public class ActivoControlador extends HttpServlet {
             sesion.setAttribute("mensajeError", "Error en la base de datos: " + e.getMessage());
         }
 
-        // redirigimos para que al recargar la pagina no se repita el POST
+        // redirigimos para que con f5 no se repita post
         response.sendRedirect(request.getContextPath() + "/activos");
     }
 
     // ---------------------------------------------------------------------
 
-    // arma el ActivoDTO con los datos del formulario y valida las reglas
+    // arma el activodto con los datos del formulario y valida las reglas
     private ActivoDTO leerActivo(HttpServletRequest request) {
         ActivoDTO a = new ActivoDTO();
 
@@ -182,7 +182,7 @@ public class ActivoControlador extends HttpServlet {
         }
         a.setObservaciones(observaciones);
 
-        // RN-04: coherencia entre estado y colegio
+        // RN-04 coherencia entre estado y colegio
         String estado = leer(request, "estado");
         if (!listaEstados().contains(estado)) {
             throw new IllegalArgumentException("Seleccione un estado valido.");
@@ -196,7 +196,7 @@ public class ActivoControlador extends HttpServlet {
             }
             a.setIdIeAsignada(idIe);
         } else {
-            // En Almacén, En Mantenimiento y De Baja no tienen colegio
+            // en almacen y en Mantenimiento y de baja no tienen colegio
             a.setIdIeAsignada(null);
         }
 

@@ -13,7 +13,7 @@
     </head>
     <body>
 
-        <!-- Franja roja institucional -->
+        <!--FRANJA ROJA INST-->
         <div class="barra-roja">
             <div class="contenedor barra-roja-interna">
                 <div class="logo-minedu">
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <!-- Sub-barra blanca -->
+        <!--SUB BARRA BLANCA-->
         <div class="subbarra">
             <div class="contenedor subbarra-interna">
                 <h1>Gestión y Distribución de Activos TI</h1>

@@ -6,7 +6,7 @@
 
 <main class="contenedor principal">
 
-    <!-- Mensajes -->
+    <!--Mensajes-->
     <c:if test="${not empty mensajeOk}">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <i class="bi bi-check-circle-fill me-2"></i><c:out value="${mensajeOk}"/>
@@ -20,7 +20,7 @@
         </div>
     </c:if>
 
-    <!-- Tarjetas KPI -->
+    <!--Tarjetas KPI-->
     <section class="kpis">
         <div class="kpi kpi-coral">
             <div class="kpi-texto">
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <!-- Búsqueda y filtros -->
+    <!--busqueda y flitro-->
     <form method="get" action="${ctx}/activos" class="filtros">
         <div class="buscador">
             <i class="bi bi-search"></i>
@@ -86,7 +86,7 @@
         </button>
     </form>
 
-    <!-- Ficha de inventario -->
+    <!--ficha de inventario-->
     <section class="ficha">
         <div class="ficha-titulo">
             <h2><i class="bi bi-clipboard-data"></i> Ficha de Inventario Central</h2>
@@ -228,7 +228,7 @@
     </section>
 </main>
 
-<!-- Modal: registrar activo -->
+<!--Modal para registrar activo-->
 <div class="modal fade" id="modalRegistrar" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
         <form class="modal-content" method="post" action="${ctx}/activos" id="formRegistrar">
@@ -305,7 +305,7 @@
     </div>
 </div>
 
-<!-- Modal: editar / asignar activo -->
+<!--modal para editar y asignar activo-->
 <div class="modal fade" id="modalEditar" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
         <form class="modal-content" method="post" action="${ctx}/activos" id="formEditar">
@@ -383,7 +383,7 @@
     </div>
 </div>
 
-<!-- Modal: dar de baja -->
+<!--modal para dar de baja -->
 <div class="modal fade" id="modalBaja" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <form class="modal-content" method="post" action="${ctx}/activos" id="formBaja">
